@@ -241,7 +241,7 @@ body {
     margin: 30px 0 96px 0;
 }
 
-h3 {
+.categories-heading {
     margin: auto;
     text-transform: uppercase;
     text-align: center;
@@ -250,7 +250,7 @@ h3 {
     color: #FFFFFF;
 }
 
-h3 span {
+.categories-heading span {
     display: block;
     font-weight: 700;
     font-size: 24px;
@@ -258,6 +258,123 @@ h3 span {
     color: #F16D7F;
 }
 
+.featured-items-heading {
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
+}
+
+.featured-items-heading-text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #9F9F9F;
+    margin: 6px 0 48px 0;
+}
+
+.product-item-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 49px;
+}
+
+.product-item {
+    position: relative;
+    width: 360px;
+    background: #F8F8F8;
+    margin-bottom: 30px;
+}
+
+.product-item:hover .product-item-photo {
+    filter: brightness(30%);
+}
+
+.product-item-text-container {
+    padding: 25px 18px 20px 18px;
+    text-align: left;
+}
+
+.product-item-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0 0 12px 0;
+}
+
+.product-item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin: 0 0 18px 0;
+}
+
+.product-item-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.product-item-button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 138px;
+    min-height: 43px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    text-align: center;
+    font-size: 14px;
+    line-height: 43px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+}
+
+.product-item:hover .product-item-button {
+    display: flex;
+}
+
+.product-item-button-logo {
+    fill: #FFFFFF;
+    margin: 0 11px 0 0;
+}
+
+.product-item:hover .product-item-button:hover {
+    color: #F16D7F;
+    border: 1px solid #F16D7F;
+}
+
+.product-item:hover .product-item-button:hover .product-item-button-logo {
+    fill: #F16D7F;
+}
+
+.featured-items-button {
+    display: block;
+    margin: 0 auto;
+    width: 211px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
+    background-color: #FFFFFF;
+    color: #F26376;
+    text-align: center;
+    line-height: 47px;
+    font-size: 16px;
+}
+
+.featured-items-button:hover {
+    background: #F16D7F;
+    border: 1px solid #FF6A6A;
+    color: #FFFFFF;
+}
+
+.featured-items {
+    margin-bottom: 96px;
+}
 
 .additional-information {
     width: 100%;
@@ -336,6 +453,39 @@ h3 span {
     font-size: 24px;
     line-height: 40px;
     font-weight: 700;
+}
+
+.subscribe-form {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-input {
+    width: 323px;
+    height: 49px;
+    background-color: #E1E1E1;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid transparent;
+    padding-left: 22px;
+}
+
+.subscribe-button {
+    width: 100px;
+    height: 49px;
+    background-color: #E05C6E;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 49px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid transparent;
+    font-size: 14px;
+}
+
+.subscribe-button:hover {
+    background-color: #FFFFFF;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
 }
 
 .footer-bottom-part {
