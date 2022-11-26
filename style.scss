@@ -94,6 +94,17 @@ body {
       color: $color-white;
     }
   }
+  &_hover-registration:hover {
+    background-color: $color-white;
+    background: $color-white;
+    border: 1px solid $color-pink;
+    .fa-arrow-right {
+      color: $color-pink;
+    }
+    .registration-form-button-text {
+      color: $color-pink;
+    }
+  }
 }
 
 .categories-link {
@@ -294,5 +305,6 @@ body {
 }
 
 @import "product";
-
 @import "catalog";
+@import "cart";
+@import "registration";
