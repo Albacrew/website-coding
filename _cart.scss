@@ -1,0 +1,5 @@
+.shopping-cart-heading {
+  @include txt(400, 24px, 29px, $color-pink);
+  text-transform: uppercase;
+  padding: 60px 0 60px 0;
+}
