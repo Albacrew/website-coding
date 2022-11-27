@@ -4,7 +4,7 @@
   margin: 64px 0 96px 0;
 }
 
-.registration-form-list {
+.form-list {
   width: 32%;
   list-style-type: none;
 }
@@ -13,9 +13,7 @@
   @include txt(300, 16px, 19px, $color-black);
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"] {
+.registration-input {
   width: 360px;
   height: 45px;
   background-color: $color-white;
@@ -36,11 +34,11 @@ input[type="radio"] {
   padding-right: 20px;
 }
 
-input::-webkit-input-placeholder {
+.registration-input::-webkit-input-placeholder {
   @include txt(300, 13px, 16px, #b1b1b1);
 }
 
-input:-moz-placeholder {
+.registration-input:-moz-placeholder {
   @include txt(300, 13px, 16px, #b1b1b1);
 }
 

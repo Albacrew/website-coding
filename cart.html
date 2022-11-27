@@ -9,12 +9,6 @@
       src="https://kit.fontawesome.com/63686a22c2.js"
       crossorigin="anonymous"
     ></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -171,6 +165,150 @@
           <p class="shopping-cart-heading">Shopping cart</p>
         </div>
       </div>
+      <section class="container">
+        <div class="cart">
+          <div class="cart-box">
+            <div class="cart-item">
+              <a class="cart-item-link" href="product.html">
+                <img
+                  class="cart-item-photo"
+                  src="images/cart-item1.png"
+                  alt="cart item"
+                  width="262"
+                  height="306"
+              /></a>
+              <div class="cart-item-text-container">
+                <p class="cart-item-title">Mango people <br />T-shirt</p>
+                <p class="cart-item-text">Price: <span>$300</span></p>
+                <p class="cart-item-text">Color: Red</p>
+                <p class="cart-item-text">Size: Xl</p>
+                <form action="#">
+                  <label class="label-quantity" for="number">Quantity</label>
+                  <input
+                    class="cart-input"
+                    type="number"
+                    id="number"
+                    name="address"
+                    placeholder="State"
+                    required
+                    min="1"
+                    max="20"
+                    value="2"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="cart-item">
+              <a class="cart-item-link" href="product.html">
+                <img
+                  class="cart-item-photo"
+                  src="images/cart-item2.png"
+                  alt="cart item"
+                  width="262"
+                  height="306"
+              /></a>
+              <div class="cart-item-text-container">
+                <p class="cart-item-title">Mango people <br />T-shirt</p>
+                <p class="cart-item-text">Price: <span>$300</span></p>
+                <p class="cart-item-text">Color: Red</p>
+                <p class="cart-item-text">Size: Xl</p>
+                <form action="#">
+                  <label class="label-quantity" for="number">Quantity</label>
+                  <input
+                    class="cart-input"
+                    type="number"
+                    id="number"
+                    name="address"
+                    placeholder="State"
+                    required
+                    min="1"
+                    max="20"
+                    value="2"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="cart-box-button">
+              <a class="cart-button" href="#">
+                <div
+                  class="button cart-button__button cart-button__button_property button_hover-pink"
+                >
+                  Clear shopping cart
+                </div>
+              </a>
+              <a class="address-form-button" href="catalog.html">
+                <div
+                  class="button cart-button__button cart-button__button_property button_hover-pink"
+                >
+                  Continue shopping
+                </div>
+              </a>
+            </div>
+          </div>
+          <ul class="form-list">
+            <form class="address-form" action="#">
+              <li>
+                <label class="label-name uppercase" for="name"
+                  >Shipping address</label
+                >
+              </li>
+              <li>
+                <input
+                  class="registration-input"
+                  type="text"
+                  id="name"
+                  name="address"
+                  placeholder="Bangladesh"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="registration-input"
+                  type="text"
+                  id="name"
+                  name="address"
+                  placeholder="State"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  class="registration-input"
+                  type="text"
+                  id="name"
+                  name="address"
+                  placeholder="Postcode&nbsp;/ Zip"
+                  required
+                />
+              </li>
+              <li>
+                <a class="address-form-button" href="#">
+                  <div
+                    class="button address-form-button__button address-form-button__button_property button_hover-pink"
+                  >
+                    Get a quote
+                  </div>
+                </a>
+              </li>
+            </form>
+            <li>
+              <div class="price-box">
+                <p class="price-box-txt1">Sub total $900</p>
+                <p class="price-box-txt2">Grand total <span>$900</span></p>
+                <div class="price-box-divider"></div>
+                <a class="price-box-button" href="#">
+                  <div
+                    class="button price-box-button__button price-box-button__button_property button_hover-white"
+                  >
+                    Proceed to checkout
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="footer-top-part">
