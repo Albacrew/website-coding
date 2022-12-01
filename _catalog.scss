@@ -7,20 +7,30 @@
   width: 360px;
   position: relative;
   box-sizing: border-box;
-  background-color: $color-white;
-  //   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-  display: inline-block;
 }
 
 .filter-name {
   display: block;
+  position: relative;
   @include txt(600, 14px, 17px, $color-black);
   text-transform: uppercase;
   padding-left: 16px;
+  z-index: 2;
+  background-color: $color-white;
+  padding: 13px 0 16px 16px;
 }
 
-.filter-name::-webkit-details-marker {
+.filter-subname {
+  display: block;
+}
+
+.filter-name::-webkit-details-marker,
+.filter-subname::-webkit-details-marker {
   display: none;
+}
+
+details > summary {
+  list-style: none;
 }
 
 .fa-bars {
@@ -38,7 +48,7 @@
   background-color: $color-white;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   box-sizing: border-box;
-  padding: 16px 16px 0px 17px;
+  padding: 0 16px 0px 17px;
   z-index: 1;
   position: absolute;
   display: block;
@@ -74,26 +84,29 @@
   margin: 0 0 0 10px;
 }
 
-.page-color {
-  border: none;
-  color: #c4c4c4;
+.nav-center {
+  text-align: center;
 }
 
-.page-active a {
+.pagination {
+  display: inline-block;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+}
+
+.pagination a {
+  color: #c4c4c4;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.pagination a.active {
   color: $color-pink;
 }
 
-.page-item {
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.border-left {
-  border-left: 1px solid #ebebeb;
-  border-radius: 5px 0 0 5px;
-}
-
-.border-right {
-  border-right: 1px solid #ebebeb;
-  border-radius: 0 0.5px 0.5px 0;
+.pagination a:hover:not(.active):not(.disable) {
+  background-color: #ddd;
+  color: $color-pink;
 }

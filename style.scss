@@ -8,6 +8,17 @@
 body {
   font-family: "Lato";
   font-style: normal;
+  height: 100%;
+}
+
+.site-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex-grow: 1;
 }
 
 @import "vars";
@@ -87,21 +98,17 @@ body {
     background-color: $color-white;
     background: $color-pink;
     border: 1px solid $color-pink;
+    color: $color-white;
     .new-arrivals-description-button-add-logo {
       fill: $color-white;
-    }
-    .new-arrivals-description-button-add-text {
-      color: $color-white;
     }
   }
   &_hover-registration:hover {
     background-color: $color-white;
     background: $color-white;
     border: 1px solid $color-pink;
+    color: $color-pink;
     .fa-arrow-right {
-      color: $color-pink;
-    }
-    .registration-form-button-text {
       color: $color-pink;
     }
   }
@@ -121,6 +128,27 @@ body {
       @include txt(400, 16px, 47px, $color-pink);
     }
   }
+}
+
+.hvr-grow {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -moz-transition-property: transform;
+  -o-transition-property: transform;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .categories-block-women {

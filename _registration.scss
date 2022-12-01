@@ -4,7 +4,7 @@
   margin: 64px 0 96px 0;
 }
 
-.form-list {
+.form-list-registration {
   width: 32%;
   list-style-type: none;
 }
@@ -18,7 +18,7 @@
   height: 45px;
   background-color: $color-white;
   border: 1px solid #a4a4a4;
-  padding-left: 17px;
+  padding: 0 17px 0 17px;
   margin: 20px 0 0 0;
   // display: inline-block;
 }
@@ -48,27 +48,14 @@ input[type="radio"] {
 }
 
 .registration-form-button {
-  display: flex;
-  width: 100%;
-  justify-content: left;
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.5s, color 0.5s;
-    &_property {
-      width: 167px;
-      min-height: 50px;
-      border: 1px solid $color-pink;
-      background-color: $color-pink;
-      text-decoration: none;
-    }
+  &_property {
+    width: 167px;
+    min-height: 50px;
+    border: 1px solid $color-pink;
+    background-color: $color-pink;
+    @include txt(400, 14px, 17px, $color-white);
+    text-transform: uppercase;
   }
-}
-
-.registration-form-button-text {
-  @include txt(400, 14px, 17px, $color-white);
-  text-transform: uppercase;
 }
 
 .fa-arrow-right {

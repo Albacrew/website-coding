@@ -136,6 +136,15 @@
   margin: 0 auto;
   padding: 65px 0 48px 0;
   text-align: center;
+  &_property {
+    width: 211px;
+    min-height: 47px;
+    border: 1px solid #ff6a6a;
+    background: $color-white;
+    text-decoration: none;
+    margin-top: 48px;
+    @include txt(400, 16px, 47px, #f26376);
+  }
 }
 
 .select-product-text {
@@ -150,30 +159,6 @@ select {
 
 .select-quantity {
   margin-right: 0px;
-}
-
-.new-arrivals-description-button {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: absolute;
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.5s, color 0.5s;
-    &_property {
-      width: 211px;
-      min-height: 47px;
-      border: 1px solid #ff6a6a;
-      background: $color-white;
-      text-decoration: none;
-    }
-  }
-}
-
-.new-arrivals-description-button-add-text {
-  @include txt(400, 16px, 47px, #f26376);
 }
 
 .new-arrivals-description-button-add-logo {
