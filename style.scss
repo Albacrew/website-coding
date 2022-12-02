@@ -47,7 +47,8 @@ body {
 }
 
 .brand-info-wrapper {
-  padding: 290px 0 0 650px;
+  // padding: 290px 0 0 650px;
+  padding: 25% 0 0 57%;
   text-transform: uppercase;
   position: relative;
 }
@@ -151,38 +152,50 @@ body {
   transform: scale(1.1);
 }
 
+.block-size1 {
+  width: 32%;
+}
+
+.block-size2 {
+  width: 100%;
+}
+
 .categories-block-women {
   display: flex;
-  width: 360px;
+  width: 100%;
   min-height: 260px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/women-clothes.png);
   background-blend-mode: darken;
 }
 
 .categories-block-men {
   display: flex;
-  width: 360px;
+  width: 100%;
   min-height: 260px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/men-clothes.png);
   background-blend-mode: darken;
 }
 
 .categories-block-kids {
   display: flex;
-  width: 360px;
+  max-width: 100%;
   min-height: 260px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/kids-clothes.png);
   background-blend-mode: darken;
 }
 
 .categories-block-accessories {
   display: flex;
-  width: $site-width;
+  width: 100%;
   min-height: 180px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/accesories.png);
   background-blend-mode: darken;
   margin: 30px 0 96px 0;
@@ -299,7 +312,7 @@ body {
 
 .additional-information {
   width: 100%;
-  height: 341px;
+  min-height: 341px;
   background-color: $color-black;
 }
 
@@ -307,7 +320,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 100px 10px 0 10px; */
+  padding: 103px 0 0 0;
 }
 
 .additional-information-block {
@@ -320,11 +333,12 @@ body {
 
 .additional-information-block-img {
   align-self: center;
-  margin: 104px 0 25px 0;
+  // margin: 104px 0 25px 0;
 }
 
 .additional-information-heading {
   @include txt(400, 20px, 24px, #fbfbfb);
+  margin-top: 28px;
 }
 
 .additional-information-text {
@@ -336,3 +350,4 @@ body {
 @import "catalog";
 @import "registration";
 @import "cart";
+@import "responsive";

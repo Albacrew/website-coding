@@ -23,22 +23,22 @@ body {
 
 .page-header {
   width: 100%;
-  height: 75px;
+  min-height: 75px;
   background-color: #222222;
 }
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 .wrapper {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
 .wrapper-wide {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -50,11 +50,11 @@ body {
 }
 
 .header-menu-left-part {
-  width: 280px;
+  width: 25%;
 }
 
 .header-menu-right-part {
-  width: 168px;
+  width: 25%;
 }
 
 .header-menu-container {
@@ -219,8 +219,12 @@ body {
   color: #f16d7f;
 }
 
+.header-logo-icon {
+  margin-left: 33px;
+}
+
 .footer-top-part {
-  height: 448px;
+  min-height: 448px;
   background-image: url(images/photo-subscribe.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -245,7 +249,7 @@ body {
 }
 
 .footer-top-part-image {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .footer-top-right-text {
@@ -283,7 +287,7 @@ body {
 }
 
 .subscribe-input {
-  width: 323px;
+  width: 256px;
   height: 49px;
   background-color: #e1e1e1;
   border-radius: 20px 0 0 20px;
@@ -362,7 +366,7 @@ body {
 }
 
 .brand-info-wrapper {
-  padding: 290px 0 0 650px;
+  padding: 25% 0 0 57%;
   text-transform: uppercase;
   position: relative;
 }
@@ -465,38 +469,50 @@ body {
   transform: scale(1.1);
 }
 
+.block-size1 {
+  width: 32%;
+}
+
+.block-size2 {
+  width: 100%;
+}
+
 .categories-block-women {
   display: flex;
-  width: 360px;
+  width: 100%;
   min-height: 260px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/women-clothes.png);
   background-blend-mode: darken;
 }
 
 .categories-block-men {
   display: flex;
-  width: 360px;
+  width: 100%;
   min-height: 260px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/men-clothes.png);
   background-blend-mode: darken;
 }
 
 .categories-block-kids {
   display: flex;
-  width: 360px;
+  max-width: 100%;
   min-height: 260px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/kids-clothes.png);
   background-blend-mode: darken;
 }
 
 .categories-block-accessories {
   display: flex;
-  width: 1140px;
+  width: 100%;
   min-height: 180px;
   background-size: cover;
+  background-position: center;
   background: rgba(33, 22, 22, 0.7) url(images/accesories.png);
   background-blend-mode: darken;
   margin: 30px 0 96px 0;
@@ -638,7 +654,7 @@ body {
 
 .additional-information {
   width: 100%;
-  height: 341px;
+  min-height: 341px;
   background-color: #222222;
 }
 
@@ -646,7 +662,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 100px 10px 0 10px; */
+  padding: 103px 0 0 0;
 }
 
 .additional-information-block {
@@ -659,7 +675,6 @@ body {
 
 .additional-information-block-img {
   align-self: center;
-  margin: 104px 0 25px 0;
 }
 
 .additional-information-heading {
@@ -667,6 +682,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #fbfbfb;
+  margin-top: 28px;
 }
 
 .additional-information-text {
@@ -1304,4 +1320,199 @@ input[type=radio] {
   height: 1px;
   border: 1px solid #e2e2e2;
   margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu {
+    padding: 18px 32px 0px 32px;
+  }
+  .menu-box {
+    padding: 25px;
+    width: 200px;
+    left: 20px;
+    height: 600px;
+  }
+  .brand-info-box {
+    height: 368px;
+    background-size: contain;
+    background-position-x: 22%;
+  }
+  .brand-info-wrapper {
+    padding: 138px 0 0 425px;
+  }
+  .brand-name-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+    color: #222222;
+  }
+  .brand-name-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+  }
+  .content {
+    padding: 3% 2% 0;
+  }
+  .categories-block-women,
+.categories-block-men,
+.categories-block-kids {
+    min-height: 168px;
+  }
+  .categories-block-accessories {
+    min-height: 116px;
+    margin: 19px 0 96px 0;
+  }
+  .product-item-box {
+    margin-bottom: 33px;
+  }
+  .featured-items {
+    margin-bottom: 65px;
+  }
+  .additional-information-flex-box {
+    flex-direction: column;
+    padding: 0 0 64px 0;
+  }
+  .additional-information-block {
+    margin-top: 48px;
+  }
+  .footer-top-flex {
+    flex-direction: column;
+    padding: 64px 10px 0 10px;
+  }
+  .footer-top-left-part {
+    margin-bottom: 48px;
+  }
+  .subscribe-form {
+    margin: 27px 0 140px 0;
+  }
+  .footer-top-part {
+    background-position: 24%;
+    background-size: 350%;
+  }
+  .footer-bottom-flex {
+    padding: 22px 32px 22px 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .registration-icon,
+.number-in-circle {
+    display: none;
+  }
+  .header-menu {
+    padding: 18px 16px 0px 16px;
+  }
+  .header-logo-icon {
+    margin-left: 0;
+  }
+  .search-icon-form__label {
+    margin-left: 40px;
+  }
+  .menu-box {
+    padding: 15px;
+    width: 160px;
+    top: 62px;
+    left: -110px;
+    height: 600px;
+  }
+  .menu-box:before {
+    left: 120px;
+  }
+  .brand-info-box {
+    height: 363px;
+    background-image: none;
+  }
+  .brand-info-wrapper {
+    padding: 148px 56px 0 56px;
+  }
+  .brand-name-title {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+    color: #222222;
+  }
+  .brand-name-subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #222222;
+  }
+  .content {
+    padding: 3% 2% 0;
+  }
+  .categories-flex-box {
+    padding: 64px 16px 64px 16px;
+  }
+  .block-size1 {
+    width: 100%;
+  }
+  .categories-block-women,
+.categories-block-men,
+.categories-block-kids {
+    min-height: 249px;
+    margin-top: 32px;
+  }
+  .categories-block-accessories {
+    min-height: 111px;
+    margin: 32px 0 0 0;
+  }
+  .product-item-box {
+    margin-bottom: 41px;
+  }
+  .featured-items {
+    margin-bottom: 96px;
+  }
+  .additional-information-flex-box {
+    padding: 0 0 81px 0;
+  }
+  .footer-top-part {
+    min-height: 550px;
+    background-position: 25%;
+    background-size: cover;
+  }
+  .footer-top-left-part {
+    width: 343px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #222224;
+    margin-bottom: 60px;
+  }
+  .subscribe-form {
+    margin: 22px 0 110px 0;
+  }
+  .subscribe-form_property {
+    width: 96px;
+  }
+  .footer-top-right-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #222224;
+  }
+  .first-line {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    color: #222224;
+  }
+  .subscribe-input {
+    width: 246px;
+  }
+  .footer-bottom-part {
+    height: 143px;
+  }
+  .footer-bottom-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+  }
+  .rights {
+    padding-bottom: 9px;
+  }
+  .social-icons {
+    margin: 43px 0 40px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
